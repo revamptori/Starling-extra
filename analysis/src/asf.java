@@ -1,0 +1,37 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  java.lang.Object
+ *  java.lang.Override
+ */
+public class asf
+extends ase {
+    public asf(long l, ase ase2) {
+        super(l);
+        this.a = ase2;
+    }
+
+    @Override
+    public int[] a(int n, int n2, int n3, int n4) {
+        int[] nArray;
+        int[] nArray2 = this.a.a(n - 1, n2 - 1, n3 + 2, n4 + 2);
+        nArray = asc.a(n3 * n4);
+        for (int i = 0; i < n4; ++i) {
+            for (\u2603 = 0; \u2603 < n3; ++\u2603) {
+                this.a((long)(\u2603 + n), (long)(i + n2));
+                \u2603 = nArray2[\u2603 + 1 + (i + 1) * (n3 + 2)];
+                if (this.a(57) == 0) {
+                    if (\u2603 == ady.q.az) {
+                        nArray[\u2603 + i * n3] = ady.q.az + 128;
+                        continue;
+                    }
+                    nArray[\u2603 + i * n3] = \u2603;
+                    continue;
+                }
+                nArray[\u2603 + i * n3] = \u2603;
+            }
+        }
+        return nArray;
+    }
+}

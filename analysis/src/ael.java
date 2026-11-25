@@ -1,0 +1,22 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  java.lang.Object
+ */
+public class ael
+extends ady {
+    public ael(int n) {
+        super(n);
+        this.as.A = -100;
+        this.as.B = -100;
+        this.as.C = -100;
+        this.as.E = 1;
+        this.as.K = 1;
+        this.ak = afi.bw.Q();
+        this.at.clear();
+        this.au.clear();
+        this.av.clear();
+        this.au.add((Object)new ady.c(tr.class, 8, 4, 8));
+    }
+}

@@ -1,0 +1,28 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  java.lang.Object
+ *  java.lang.Override
+ */
+public class bhs
+extends bht {
+    private final int d = avd.a(adf.values().length);
+
+    public bhs(adm adm2, bfr bfr2, cj cj2, int n) {
+        super(adm2, bfr2, cj2, n);
+    }
+
+    public int a(adf adf2, bhq bhq2) {
+        if (!bhq2.b(adf2)) {
+            return this.d + adf2.ordinal();
+        }
+        return -1;
+    }
+
+    @Override
+    public void a() {
+        super.a();
+        avd.a(this.d, adf.values().length);
+    }
+}

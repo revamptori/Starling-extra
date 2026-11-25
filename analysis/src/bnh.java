@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  java.io.InputStream
+ *  java.lang.Object
+ *  java.lang.String
+ */
+import java.io.InputStream;
+
+public interface bnh {
+    public jy a();
+
+    public InputStream b();
+
+    public boolean c();
+
+    public <T extends bnw> T a(String var1);
+
+    public String d();
+}
