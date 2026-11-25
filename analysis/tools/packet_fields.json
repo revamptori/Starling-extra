@@ -1,0 +1,2446 @@
+{
+ "HANDSHAKING": {
+  "SERVERBOUND": {
+   "0": {
+    "obf": "jc",
+    "mcp": "net/minecraft/network/handshake/client/C00Handshake",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "protocolVersion",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "ip",
+      "type": "String(max=255)"
+     },
+     {
+      "obf": "c",
+      "mcp": "port",
+      "type": "ushort"
+     },
+     {
+      "obf": "d",
+      "mcp": "requestedState",
+      "type": "VarInt"
+     }
+    ]
+   }
+  }
+ },
+ "PLAY": {
+  "CLIENTBOUND": {
+   "0": {
+    "obf": "gn",
+    "mcp": "net/minecraft/network/play/server/S00PacketKeepAlive",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "id",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "1": {
+    "obf": "gt",
+    "mcp": "net/minecraft/network/play/server/S01PacketJoinGame",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "int"
+     },
+     {
+      "obf": "b",
+      "mcp": "hardcoreMode",
+      "type": "??((n & 8) == 8)"
+     },
+     {
+      "obf": "c",
+      "mcp": "gameType",
+      "type": "??(adp.a.a(n &= 0xFFFFFFF7))"
+     },
+     {
+      "obf": "d",
+      "mcp": "dimension",
+      "type": "byte"
+     },
+     {
+      "obf": "e",
+      "mcp": "difficulty",
+      "type": "ubyte"
+     },
+     {
+      "obf": "f",
+      "mcp": "maxPlayers",
+      "type": "ubyte"
+     },
+     {
+      "obf": "g",
+      "mcp": "worldType",
+      "type": "String(max=16)"
+     },
+     {
+      "obf": "g",
+      "mcp": "worldType",
+      "type": "??(adr.b)"
+     },
+     {
+      "obf": "h",
+      "mcp": "reducedDebugInfo",
+      "type": "boolean"
+     }
+    ]
+   },
+   "2": {
+    "obf": "fy",
+    "mcp": "net/minecraft/network/play/server/S02PacketChat",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "chatComponent",
+      "type": "IChatComponent(JSON)"
+     },
+     {
+      "obf": "b",
+      "mcp": "type",
+      "type": "byte"
+     }
+    ]
+   },
+   "3": {
+    "obf": "hu",
+    "mcp": "net/minecraft/network/play/server/S03PacketTimeUpdate",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "totalWorldTime",
+      "type": "long"
+     },
+     {
+      "obf": "b",
+      "mcp": "worldTime",
+      "type": "long"
+     }
+    ]
+   },
+   "4": {
+    "obf": "hn",
+    "mcp": "net/minecraft/network/play/server/S04PacketEntityEquipment",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityID",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "equipmentSlot",
+      "type": "short"
+     },
+     {
+      "obf": "c",
+      "mcp": "itemStack",
+      "type": "ItemStack"
+     }
+    ]
+   },
+   "5": {
+    "obf": "ht",
+    "mcp": "net/minecraft/network/play/server/S05PacketSpawnPosition",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "spawnBlockPos",
+      "type": "BlockPos"
+     }
+    ]
+   },
+   "6": {
+    "obf": "hp",
+    "mcp": "net/minecraft/network/play/server/S06PacketUpdateHealth",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "health",
+      "type": "float"
+     },
+     {
+      "obf": "b",
+      "mcp": "foodLevel",
+      "type": "VarInt"
+     },
+     {
+      "obf": "c",
+      "mcp": "saturationLevel",
+      "type": "float"
+     }
+    ]
+   },
+   "7": {
+    "obf": "he",
+    "mcp": "net/minecraft/network/play/server/S07PacketRespawn",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "dimensionID",
+      "type": "int"
+     },
+     {
+      "obf": "b",
+      "mcp": "difficulty",
+      "type": "ubyte"
+     },
+     {
+      "obf": "c",
+      "mcp": "gameType",
+      "type": "ubyte"
+     },
+     {
+      "obf": "d",
+      "mcp": "worldType",
+      "type": "String(max=16)"
+     },
+     {
+      "obf": "d",
+      "mcp": "worldType",
+      "type": "??(adr.b)"
+     }
+    ]
+   },
+   "8": {
+    "obf": "fi",
+    "mcp": "net/minecraft/network/play/server/S08PacketPlayerPosLook",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "x",
+      "type": "double"
+     },
+     {
+      "obf": "b",
+      "mcp": "y",
+      "type": "double"
+     },
+     {
+      "obf": "c",
+      "mcp": "z",
+      "type": "double"
+     },
+     {
+      "obf": "d",
+      "mcp": "yaw",
+      "type": "float"
+     },
+     {
+      "obf": "e",
+      "mcp": "pitch",
+      "type": "float"
+     },
+     {
+      "obf": "f",
+      "mcp": "field_179835_f",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "9": {
+    "obf": "hi",
+    "mcp": "net/minecraft/network/play/server/S09PacketHeldItemChange",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "heldItemHotbarIndex",
+      "type": "byte"
+     }
+    ]
+   },
+   "10": {
+    "obf": "ha",
+    "mcp": "net/minecraft/network/play/server/S0APacketUseBed",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "playerID",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "bedPos",
+      "type": "BlockPos"
+     }
+    ]
+   },
+   "11": {
+    "obf": "fq",
+    "mcp": "net/minecraft/network/play/server/S0BPacketAnimation",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "type",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "12": {
+    "obf": "fp",
+    "mcp": "net/minecraft/network/play/server/S0CPacketSpawnPlayer",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "playerId",
+      "type": "UUID"
+     },
+     {
+      "obf": "c",
+      "mcp": "x",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "y",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "z",
+      "type": "int"
+     },
+     {
+      "obf": "f",
+      "mcp": "yaw",
+      "type": "byte"
+     },
+     {
+      "obf": "g",
+      "mcp": "pitch",
+      "type": "byte"
+     },
+     {
+      "obf": "h",
+      "mcp": "currentItem",
+      "type": "short"
+     },
+     {
+      "obf": "j",
+      "mcp": "field_148958_j",
+      "type": "??(pz.b(em2))"
+     }
+    ]
+   },
+   "13": {
+    "obf": "hy",
+    "mcp": "net/minecraft/network/play/server/S0DPacketCollectItem",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "collectedItemEntityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "entityId",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "14": {
+    "obf": "fk",
+    "mcp": "net/minecraft/network/play/server/S0EPacketSpawnObject",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "j",
+      "mcp": "type",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "x",
+      "type": "int"
+     },
+     {
+      "obf": "c",
+      "mcp": "y",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "z",
+      "type": "int"
+     },
+     {
+      "obf": "h",
+      "mcp": "pitch",
+      "type": "byte"
+     },
+     {
+      "obf": "i",
+      "mcp": "yaw",
+      "type": "byte"
+     },
+     {
+      "obf": "k",
+      "mcp": "field_149020_k",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "speedX",
+      "type": "short"
+     },
+     {
+      "obf": "f",
+      "mcp": "speedY",
+      "type": "short"
+     },
+     {
+      "obf": "g",
+      "mcp": "speedZ",
+      "type": "short"
+     }
+    ]
+   },
+   "15": {
+    "obf": "fn",
+    "mcp": "net/minecraft/network/play/server/S0FPacketSpawnMob",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "type",
+      "type": "byte"
+     },
+     {
+      "obf": "c",
+      "mcp": "x",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "y",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "z",
+      "type": "int"
+     },
+     {
+      "obf": "i",
+      "mcp": "yaw",
+      "type": "byte"
+     },
+     {
+      "obf": "j",
+      "mcp": "pitch",
+      "type": "byte"
+     },
+     {
+      "obf": "k",
+      "mcp": "headPitch",
+      "type": "byte"
+     },
+     {
+      "obf": "f",
+      "mcp": "velocityX",
+      "type": "short"
+     },
+     {
+      "obf": "g",
+      "mcp": "velocityY",
+      "type": "short"
+     },
+     {
+      "obf": "h",
+      "mcp": "velocityZ",
+      "type": "short"
+     },
+     {
+      "obf": "m",
+      "mcp": "watcher",
+      "type": "??(pz.b(em2))"
+     }
+    ]
+   },
+   "16": {
+    "obf": "fo",
+    "mcp": "net/minecraft/network/play/server/S10PacketSpawnPainting",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityID",
+      "type": "VarInt"
+     },
+     {
+      "obf": "d",
+      "mcp": "title",
+      "type": "String(max=uq.a.A)"
+     },
+     {
+      "obf": "b",
+      "mcp": "position",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "c",
+      "mcp": "facing",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "17": {
+    "obf": "fl",
+    "mcp": "net/minecraft/network/play/server/S11PacketSpawnExperienceOrb",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityID",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "posX",
+      "type": "int"
+     },
+     {
+      "obf": "c",
+      "mcp": "posY",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "posZ",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "xpValue",
+      "type": "short"
+     }
+    ]
+   },
+   "18": {
+    "obf": "hm",
+    "mcp": "net/minecraft/network/play/server/S12PacketEntityVelocity",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityID",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "motionX",
+      "type": "short"
+     },
+     {
+      "obf": "c",
+      "mcp": "motionY",
+      "type": "short"
+     },
+     {
+      "obf": "d",
+      "mcp": "motionZ",
+      "type": "short"
+     }
+    ]
+   },
+   "19": {
+    "obf": "hb",
+    "mcp": "net/minecraft/network/play/server/S13PacketDestroyEntities",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityIDs",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "20": {
+    "obf": "gv",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "21": {
+    "obf": "gv.a",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity$S15PacketEntityRelMove",
+    "fields": [
+     {
+      "obf": "b",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "c",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "d",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "g",
+      "mcp": "?",
+      "type": "boolean"
+     }
+    ]
+   },
+   "22": {
+    "obf": "gv.c",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity$S16PacketEntityLook",
+    "fields": [
+     {
+      "obf": "e",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "f",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "g",
+      "mcp": "?",
+      "type": "boolean"
+     }
+    ]
+   },
+   "23": {
+    "obf": "gv.b",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity$S17PacketEntityLookMove",
+    "fields": [
+     {
+      "obf": "b",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "c",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "d",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "e",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "f",
+      "mcp": "?",
+      "type": "byte"
+     },
+     {
+      "obf": "g",
+      "mcp": "?",
+      "type": "boolean"
+     }
+    ]
+   },
+   "24": {
+    "obf": "hz",
+    "mcp": "net/minecraft/network/play/server/S18PacketEntityTeleport",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "posX",
+      "type": "int"
+     },
+     {
+      "obf": "c",
+      "mcp": "posY",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "posZ",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "yaw",
+      "type": "byte"
+     },
+     {
+      "obf": "f",
+      "mcp": "pitch",
+      "type": "byte"
+     },
+     {
+      "obf": "g",
+      "mcp": "onGround",
+      "type": "boolean"
+     }
+    ]
+   },
+   "25": {
+    "obf": "hf",
+    "mcp": "net/minecraft/network/play/server/S19PacketEntityHeadLook",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "yaw",
+      "type": "byte"
+     }
+    ]
+   },
+   "26": {
+    "obf": "gi",
+    "mcp": "net/minecraft/network/play/server/S19PacketEntityStatus",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "int"
+     },
+     {
+      "obf": "b",
+      "mcp": "logicOpcode",
+      "type": "byte"
+     }
+    ]
+   },
+   "27": {
+    "obf": "hl",
+    "mcp": "net/minecraft/network/play/server/S1BPacketEntityAttach",
+    "fields": [
+     {
+      "obf": "b",
+      "mcp": "entityId",
+      "type": "int"
+     },
+     {
+      "obf": "c",
+      "mcp": "vehicleEntityId",
+      "type": "int"
+     },
+     {
+      "obf": "a",
+      "mcp": "leash",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "28": {
+    "obf": "hk",
+    "mcp": "net/minecraft/network/play/server/S1CPacketEntityMetadata",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "field_149378_b",
+      "type": "??(pz.b(em2))"
+     }
+    ]
+   },
+   "29": {
+    "obf": "ib",
+    "mcp": "net/minecraft/network/play/server/S1DPacketEntityEffect",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "effectId",
+      "type": "byte"
+     },
+     {
+      "obf": "c",
+      "mcp": "amplifier",
+      "type": "byte"
+     },
+     {
+      "obf": "d",
+      "mcp": "duration",
+      "type": "VarInt"
+     },
+     {
+      "obf": "e",
+      "mcp": "hideParticles",
+      "type": "byte"
+     }
+    ]
+   },
+   "30": {
+    "obf": "hc",
+    "mcp": "net/minecraft/network/play/server/S1EPacketRemoveEntityEffect",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "effectId",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "31": {
+    "obf": "ho",
+    "mcp": "net/minecraft/network/play/server/S1FPacketSetExperience",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "field_149401_a",
+      "type": "float"
+     },
+     {
+      "obf": "c",
+      "mcp": "level",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "totalExperience",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "32": {
+    "obf": "ia",
+    "mcp": "net/minecraft/network/play/server/S20PacketEntityProperties",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "33": {
+    "obf": "go",
+    "mcp": "net/minecraft/network/play/server/S21PacketChunkData",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "chunkX",
+      "type": "int"
+     },
+     {
+      "obf": "b",
+      "mcp": "chunkZ",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "field_149279_g",
+      "type": "boolean"
+     },
+     {
+      "obf": "c",
+      "mcp": "extractedData",
+      "type": "??(new a())"
+     }
+    ]
+   },
+   "34": {
+    "obf": "fz",
+    "mcp": "net/minecraft/network/play/server/S22PacketMultiBlockChange",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "chunkPosCoord",
+      "type": "int"
+     },
+     {
+      "obf": "b",
+      "mcp": "changedBlocks",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "35": {
+    "obf": "fv",
+    "mcp": "net/minecraft/network/play/server/S23PacketBlockChange",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "blockPosition",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "b",
+      "mcp": "blockState",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "36": {
+    "obf": "fu",
+    "mcp": "net/minecraft/network/play/server/S24PacketBlockAction",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "blockPosition",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "b",
+      "mcp": "instrument",
+      "type": "ubyte"
+     },
+     {
+      "obf": "c",
+      "mcp": "pitch",
+      "type": "ubyte"
+     },
+     {
+      "obf": "d",
+      "mcp": "block",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "37": {
+    "obf": "fs",
+    "mcp": "net/minecraft/network/play/server/S25PacketBlockBreakAnim",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "breakerId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "position",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "c",
+      "mcp": "progress",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "38": {
+    "obf": "gp",
+    "mcp": "net/minecraft/network/play/server/S26PacketMapChunkBulk",
+    "fields": [
+     {
+      "obf": "d",
+      "mcp": "isOverworld",
+      "type": "boolean"
+     },
+     {
+      "obf": "a",
+      "mcp": "xPositions",
+      "type": "??(new int[n])"
+     },
+     {
+      "obf": "b",
+      "mcp": "zPositions",
+      "type": "??(new int[n])"
+     },
+     {
+      "obf": "c",
+      "mcp": "chunksData",
+      "type": "??(new go.a[n])"
+     }
+    ]
+   },
+   "39": {
+    "obf": "gk",
+    "mcp": "net/minecraft/network/play/server/S27PacketExplosion",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "posX",
+      "type": "float"
+     },
+     {
+      "obf": "b",
+      "mcp": "posY",
+      "type": "float"
+     },
+     {
+      "obf": "c",
+      "mcp": "posZ",
+      "type": "float"
+     },
+     {
+      "obf": "d",
+      "mcp": "strength",
+      "type": "float"
+     },
+     {
+      "obf": "e",
+      "mcp": "affectedBlockPositions",
+      "type": "??(Lists.newArrayListWithCapacity((int)n))"
+     },
+     {
+      "obf": "f",
+      "mcp": "field_149152_f",
+      "type": "float"
+     },
+     {
+      "obf": "g",
+      "mcp": "field_149153_g",
+      "type": "float"
+     },
+     {
+      "obf": "h",
+      "mcp": "field_149159_h",
+      "type": "float"
+     }
+    ]
+   },
+   "40": {
+    "obf": "gq",
+    "mcp": "net/minecraft/network/play/server/S28PacketEffect",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "soundType",
+      "type": "int"
+     },
+     {
+      "obf": "b",
+      "mcp": "soundPos",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "c",
+      "mcp": "soundData",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "serverWide",
+      "type": "boolean"
+     }
+    ]
+   },
+   "41": {
+    "obf": "gs",
+    "mcp": "net/minecraft/network/play/server/S29PacketSoundEffect",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "soundName",
+      "type": "String(max=256)"
+     },
+     {
+      "obf": "b",
+      "mcp": "posX",
+      "type": "int"
+     },
+     {
+      "obf": "c",
+      "mcp": "posY",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "posZ",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "soundVolume",
+      "type": "float"
+     },
+     {
+      "obf": "f",
+      "mcp": "soundPitch",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "42": {
+    "obf": "gr",
+    "mcp": "net/minecraft/network/play/server/S2APacketParticles",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "particleType",
+      "type": "int"
+     },
+     {
+      "obf": "a",
+      "mcp": "particleType",
+      "type": "??(cy.J)"
+     },
+     {
+      "obf": "j",
+      "mcp": "longDistance",
+      "type": "boolean"
+     },
+     {
+      "obf": "b",
+      "mcp": "xCoord",
+      "type": "float"
+     },
+     {
+      "obf": "c",
+      "mcp": "yCoord",
+      "type": "float"
+     },
+     {
+      "obf": "d",
+      "mcp": "zCoord",
+      "type": "float"
+     },
+     {
+      "obf": "e",
+      "mcp": "xOffset",
+      "type": "float"
+     },
+     {
+      "obf": "f",
+      "mcp": "yOffset",
+      "type": "float"
+     },
+     {
+      "obf": "g",
+      "mcp": "zOffset",
+      "type": "float"
+     },
+     {
+      "obf": "h",
+      "mcp": "particleSpeed",
+      "type": "float"
+     },
+     {
+      "obf": "i",
+      "mcp": "particleCount",
+      "type": "int"
+     },
+     {
+      "obf": "k",
+      "mcp": "particleArguments",
+      "type": "??(new int[n])"
+     }
+    ]
+   },
+   "43": {
+    "obf": "gm",
+    "mcp": "net/minecraft/network/play/server/S2BPacketChangeGameState",
+    "fields": [
+     {
+      "obf": "b",
+      "mcp": "state",
+      "type": "ubyte"
+     },
+     {
+      "obf": "c",
+      "mcp": "field_149141_c",
+      "type": "float"
+     }
+    ]
+   },
+   "44": {
+    "obf": "fm",
+    "mcp": "net/minecraft/network/play/server/S2CPacketSpawnGlobalEntity",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "e",
+      "mcp": "type",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "x",
+      "type": "int"
+     },
+     {
+      "obf": "c",
+      "mcp": "y",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "z",
+      "type": "int"
+     }
+    ]
+   },
+   "45": {
+    "obf": "gc",
+    "mcp": "net/minecraft/network/play/server/S2DPacketOpenWindow",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "ubyte"
+     },
+     {
+      "obf": "b",
+      "mcp": "inventoryType",
+      "type": "String(max=32)"
+     },
+     {
+      "obf": "c",
+      "mcp": "windowTitle",
+      "type": "IChatComponent(JSON)"
+     },
+     {
+      "obf": "d",
+      "mcp": "slotCount",
+      "type": "ubyte"
+     },
+     {
+      "obf": "e",
+      "mcp": "entityId",
+      "type": "int"
+     }
+    ]
+   },
+   "46": {
+    "obf": "gb",
+    "mcp": "net/minecraft/network/play/server/S2EPacketCloseWindow",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "47": {
+    "obf": "gf",
+    "mcp": "net/minecraft/network/play/server/S2FPacketSetSlot",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "slot",
+      "type": "short"
+     },
+     {
+      "obf": "c",
+      "mcp": "item",
+      "type": "ItemStack"
+     }
+    ]
+   },
+   "48": {
+    "obf": "gd",
+    "mcp": "net/minecraft/network/play/server/S30PacketWindowItems",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "ubyte"
+     },
+     {
+      "obf": "b",
+      "mcp": "itemStacks",
+      "type": "??(new zx[n])"
+     }
+    ]
+   },
+   "49": {
+    "obf": "ge",
+    "mcp": "net/minecraft/network/play/server/S31PacketWindowProperty",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "ubyte"
+     },
+     {
+      "obf": "b",
+      "mcp": "varIndex",
+      "type": "short"
+     },
+     {
+      "obf": "c",
+      "mcp": "varValue",
+      "type": "short"
+     }
+    ]
+   },
+   "50": {
+    "obf": "ga",
+    "mcp": "net/minecraft/network/play/server/S32PacketConfirmTransaction",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "ubyte"
+     },
+     {
+      "obf": "b",
+      "mcp": "actionNumber",
+      "type": "short"
+     },
+     {
+      "obf": "c",
+      "mcp": "field_148893_c",
+      "type": "boolean"
+     }
+    ]
+   },
+   "51": {
+    "obf": "hw",
+    "mcp": "net/minecraft/network/play/server/S33PacketUpdateSign",
+    "fields": [
+     {
+      "obf": "b",
+      "mcp": "blockPos",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "c",
+      "mcp": "lines",
+      "type": "??(new eu[4])"
+     }
+    ]
+   },
+   "52": {
+    "obf": "gu",
+    "mcp": "net/minecraft/network/play/server/S34PacketMaps",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "mapId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "mapScale",
+      "type": "byte"
+     },
+     {
+      "obf": "c",
+      "mcp": "mapVisiblePlayersVec4b",
+      "type": "VarInt"
+     },
+     {
+      "obf": "f",
+      "mcp": "mapMaxX",
+      "type": "ubyte"
+     },
+     {
+      "obf": "g",
+      "mcp": "mapMaxY",
+      "type": "ubyte"
+     },
+     {
+      "obf": "d",
+      "mcp": "mapMinX",
+      "type": "ubyte"
+     },
+     {
+      "obf": "e",
+      "mcp": "mapMinY",
+      "type": "ubyte"
+     },
+     {
+      "obf": "h",
+      "mcp": "mapDataBytes",
+      "type": "byte[]"
+     }
+    ]
+   },
+   "53": {
+    "obf": "ft",
+    "mcp": "net/minecraft/network/play/server/S35PacketUpdateTileEntity",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "blockPos",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "b",
+      "mcp": "metadata",
+      "type": "ubyte"
+     },
+     {
+      "obf": "c",
+      "mcp": "nbt",
+      "type": "NBT"
+     }
+    ]
+   },
+   "54": {
+    "obf": "gw",
+    "mcp": "net/minecraft/network/play/server/S36PacketSignEditorOpen",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "signPosition",
+      "type": "BlockPos"
+     }
+    ]
+   },
+   "55": {
+    "obf": "fr",
+    "mcp": "net/minecraft/network/play/server/S37PacketStatistics",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "field_148976_a",
+      "type": "??(Maps.newHashMap())"
+     }
+    ]
+   },
+   "56": {
+    "obf": "gz",
+    "mcp": "net/minecraft/network/play/server/S38PacketPlayerListItem",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "action",
+      "type": "??(em22.a(a.class))"
+     }
+    ]
+   },
+   "57": {
+    "obf": "gx",
+    "mcp": "net/minecraft/network/play/server/S39PacketPlayerAbilities",
+    "fields": []
+   },
+   "58": {
+    "obf": "fx",
+    "mcp": "net/minecraft/network/play/server/S3APacketTabComplete",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "matches",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "59": {
+    "obf": "hq",
+    "mcp": "net/minecraft/network/play/server/S3BPacketScoreboardObjective",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "objectiveName",
+      "type": "String(max=16)"
+     },
+     {
+      "obf": "d",
+      "mcp": "field_149342_c",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "objectiveValue",
+      "type": "String(max=32)"
+     },
+     {
+      "obf": "c",
+      "mcp": "type",
+      "type": "String(max=16)"
+     }
+    ]
+   },
+   "60": {
+    "obf": "hs",
+    "mcp": "net/minecraft/network/play/server/S3CPacketUpdateScore",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "name",
+      "type": "String(max=40)"
+     },
+     {
+      "obf": "d",
+      "mcp": "action",
+      "type": "??(em2.a(a.class))"
+     },
+     {
+      "obf": "b",
+      "mcp": "objective",
+      "type": "String(max=16)"
+     },
+     {
+      "obf": "c",
+      "mcp": "value",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "61": {
+    "obf": "hj",
+    "mcp": "net/minecraft/network/play/server/S3DPacketDisplayScoreboard",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "position",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "scoreName",
+      "type": "String(max=16)"
+     }
+    ]
+   },
+   "62": {
+    "obf": "hr",
+    "mcp": "net/minecraft/network/play/server/S3EPacketTeams",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "name",
+      "type": "String(max=16)"
+     },
+     {
+      "obf": "h",
+      "mcp": "action",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "displayName",
+      "type": "String(max=32)"
+     },
+     {
+      "obf": "c",
+      "mcp": "prefix",
+      "type": "String(max=16)"
+     },
+     {
+      "obf": "d",
+      "mcp": "suffix",
+      "type": "String(max=16)"
+     },
+     {
+      "obf": "i",
+      "mcp": "friendlyFlags",
+      "type": "byte"
+     },
+     {
+      "obf": "e",
+      "mcp": "nameTagVisibility",
+      "type": "String(max=32)"
+     },
+     {
+      "obf": "f",
+      "mcp": "color",
+      "type": "byte"
+     }
+    ]
+   },
+   "63": {
+    "obf": "gg",
+    "mcp": "net/minecraft/network/play/server/S3FPacketCustomPayload",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "channel",
+      "type": "String(max=20)"
+     },
+     {
+      "obf": "b",
+      "mcp": "data",
+      "type": "bytes(n)"
+     }
+    ]
+   },
+   "64": {
+    "obf": "gh",
+    "mcp": "net/minecraft/network/play/server/S40PacketDisconnect",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "reason",
+      "type": "IChatComponent(JSON)"
+     }
+    ]
+   },
+   "65": {
+    "obf": "fw",
+    "mcp": "net/minecraft/network/play/server/S41PacketServerDifficulty",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "difficulty",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "66": {
+    "obf": "gy",
+    "mcp": "net/minecraft/network/play/server/S42PacketCombatEvent",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "eventType",
+      "type": "??(em2.a(a.class))"
+     },
+     {
+      "obf": "d",
+      "mcp": "field_179772_d",
+      "type": "VarInt"
+     },
+     {
+      "obf": "c",
+      "mcp": "field_179775_c",
+      "type": "int"
+     },
+     {
+      "obf": "b",
+      "mcp": "field_179774_b",
+      "type": "VarInt"
+     },
+     {
+      "obf": "c",
+      "mcp": "field_179775_c",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "deathMessage",
+      "type": "String(max=Short.MAX_VALUE)"
+     }
+    ]
+   },
+   "67": {
+    "obf": "hh",
+    "mcp": "net/minecraft/network/play/server/S43PacketCamera",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "68": {
+    "obf": "hg",
+    "mcp": "net/minecraft/network/play/server/S44PacketWorldBorder",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "action",
+      "type": "??(em2.a(a.class))"
+     },
+     {
+      "obf": "e",
+      "mcp": "targetSize",
+      "type": "double"
+     },
+     {
+      "obf": "f",
+      "mcp": "diameter",
+      "type": "double"
+     },
+     {
+      "obf": "e",
+      "mcp": "targetSize",
+      "type": "double"
+     },
+     {
+      "obf": "g",
+      "mcp": "timeUntilTarget",
+      "type": "VarLong"
+     },
+     {
+      "obf": "c",
+      "mcp": "centerX",
+      "type": "double"
+     },
+     {
+      "obf": "d",
+      "mcp": "centerZ",
+      "type": "double"
+     },
+     {
+      "obf": "i",
+      "mcp": "warningDistance",
+      "type": "VarInt"
+     },
+     {
+      "obf": "h",
+      "mcp": "warningTime",
+      "type": "VarInt"
+     },
+     {
+      "obf": "c",
+      "mcp": "centerX",
+      "type": "double"
+     },
+     {
+      "obf": "d",
+      "mcp": "centerZ",
+      "type": "double"
+     },
+     {
+      "obf": "f",
+      "mcp": "diameter",
+      "type": "double"
+     },
+     {
+      "obf": "e",
+      "mcp": "targetSize",
+      "type": "double"
+     },
+     {
+      "obf": "g",
+      "mcp": "timeUntilTarget",
+      "type": "VarLong"
+     },
+     {
+      "obf": "b",
+      "mcp": "size",
+      "type": "VarInt"
+     },
+     {
+      "obf": "i",
+      "mcp": "warningDistance",
+      "type": "VarInt"
+     },
+     {
+      "obf": "h",
+      "mcp": "warningTime",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "69": {
+    "obf": "hv",
+    "mcp": "net/minecraft/network/play/server/S45PacketTitle",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "type",
+      "type": "??(em2.a(a.class))"
+     },
+     {
+      "obf": "b",
+      "mcp": "message",
+      "type": "IChatComponent(JSON)"
+     },
+     {
+      "obf": "c",
+      "mcp": "fadeInTime",
+      "type": "int"
+     },
+     {
+      "obf": "d",
+      "mcp": "displayTime",
+      "type": "int"
+     },
+     {
+      "obf": "e",
+      "mcp": "fadeOutTime",
+      "type": "int"
+     }
+    ]
+   },
+   "70": {
+    "obf": "gl",
+    "mcp": "net/minecraft/network/play/server/S46PacketSetCompressionLevel",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "threshold",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "71": {
+    "obf": "hx",
+    "mcp": "net/minecraft/network/play/server/S47PacketPlayerListHeaderFooter",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "header",
+      "type": "IChatComponent(JSON)"
+     },
+     {
+      "obf": "b",
+      "mcp": "footer",
+      "type": "IChatComponent(JSON)"
+     }
+    ]
+   },
+   "72": {
+    "obf": "hd",
+    "mcp": "net/minecraft/network/play/server/S48PacketResourcePackSend",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "url",
+      "type": "String(max=Short.MAX_VALUE)"
+     },
+     {
+      "obf": "b",
+      "mcp": "hash",
+      "type": "String(max=40)"
+     }
+    ]
+   },
+   "73": {
+    "obf": "gj",
+    "mcp": "net/minecraft/network/play/server/S49PacketUpdateEntityNBT",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "tagCompound",
+      "type": "NBT"
+     }
+    ]
+   }
+  },
+  "SERVERBOUND": {
+   "0": {
+    "obf": "io",
+    "mcp": "net/minecraft/network/play/client/C00PacketKeepAlive",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "key",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "1": {
+    "obf": "ie",
+    "mcp": "net/minecraft/network/play/client/C01PacketChatMessage",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "message",
+      "type": "String(max=100)"
+     }
+    ]
+   },
+   "2": {
+    "obf": "in",
+    "mcp": "net/minecraft/network/play/client/C02PacketUseEntity",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityId",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "action",
+      "type": "??(em2.a(a.class))"
+     },
+     {
+      "obf": "c",
+      "mcp": "hitVec",
+      "type": "float"
+     }
+    ]
+   },
+   "3": {
+    "obf": "ip",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer",
+    "fields": [
+     {
+      "obf": "f",
+      "mcp": "onGround",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "4": {
+    "obf": "ip.a",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer$C04PacketPlayerPosition",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "?",
+      "type": "double"
+     },
+     {
+      "obf": "b",
+      "mcp": "?",
+      "type": "double"
+     },
+     {
+      "obf": "c",
+      "mcp": "?",
+      "type": "double"
+     }
+    ]
+   },
+   "5": {
+    "obf": "ip.c",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer$C05PacketPlayerLook",
+    "fields": [
+     {
+      "obf": "d",
+      "mcp": "?",
+      "type": "float"
+     },
+     {
+      "obf": "e",
+      "mcp": "?",
+      "type": "float"
+     }
+    ]
+   },
+   "6": {
+    "obf": "ip.b",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer$C06PacketPlayerPosLook",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "?",
+      "type": "double"
+     },
+     {
+      "obf": "b",
+      "mcp": "?",
+      "type": "double"
+     },
+     {
+      "obf": "c",
+      "mcp": "?",
+      "type": "double"
+     },
+     {
+      "obf": "d",
+      "mcp": "?",
+      "type": "float"
+     },
+     {
+      "obf": "e",
+      "mcp": "?",
+      "type": "float"
+     }
+    ]
+   },
+   "7": {
+    "obf": "ir",
+    "mcp": "net/minecraft/network/play/client/C07PacketPlayerDigging",
+    "fields": [
+     {
+      "obf": "c",
+      "mcp": "status",
+      "type": "??(em2.a(a.class))"
+     },
+     {
+      "obf": "a",
+      "mcp": "position",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "b",
+      "mcp": "facing",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "8": {
+    "obf": "ja",
+    "mcp": "net/minecraft/network/play/client/C08PacketPlayerBlockPlacement",
+    "fields": [
+     {
+      "obf": "b",
+      "mcp": "position",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "c",
+      "mcp": "placedBlockDirection",
+      "type": "ubyte"
+     },
+     {
+      "obf": "d",
+      "mcp": "stack",
+      "type": "ItemStack"
+     },
+     {
+      "obf": "e",
+      "mcp": "facingX",
+      "type": "ubyte"
+     },
+     {
+      "obf": "f",
+      "mcp": "facingY",
+      "type": "ubyte"
+     },
+     {
+      "obf": "g",
+      "mcp": "facingZ",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "9": {
+    "obf": "iv",
+    "mcp": "net/minecraft/network/play/client/C09PacketHeldItemChange",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "slotId",
+      "type": "short"
+     }
+    ]
+   },
+   "10": {
+    "obf": "iy",
+    "mcp": "net/minecraft/network/play/client/C0APacketAnimation",
+    "fields": []
+   },
+   "11": {
+    "obf": "is",
+    "mcp": "net/minecraft/network/play/client/C0BPacketEntityAction",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "entityID",
+      "type": "VarInt"
+     },
+     {
+      "obf": "b",
+      "mcp": "action",
+      "type": "??(em2.a(a.class))"
+     },
+     {
+      "obf": "c",
+      "mcp": "auxData",
+      "type": "VarInt"
+     }
+    ]
+   },
+   "12": {
+    "obf": "it",
+    "mcp": "net/minecraft/network/play/client/C0CPacketInput",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "strafeSpeed",
+      "type": "float"
+     },
+     {
+      "obf": "b",
+      "mcp": "forwardSpeed",
+      "type": "float"
+     },
+     {
+      "obf": "c",
+      "mcp": "jumping",
+      "type": "??((by & 1) > 0)"
+     },
+     {
+      "obf": "d",
+      "mcp": "sneaking",
+      "type": "??((by & 2) > 0)"
+     }
+    ]
+   },
+   "13": {
+    "obf": "il",
+    "mcp": "net/minecraft/network/play/client/C0DPacketCloseWindow",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "byte"
+     }
+    ]
+   },
+   "14": {
+    "obf": "ik",
+    "mcp": "net/minecraft/network/play/client/C0EPacketClickWindow",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "slotId",
+      "type": "short"
+     },
+     {
+      "obf": "c",
+      "mcp": "usedButton",
+      "type": "byte"
+     },
+     {
+      "obf": "d",
+      "mcp": "actionNumber",
+      "type": "short"
+     },
+     {
+      "obf": "f",
+      "mcp": "mode",
+      "type": "byte"
+     },
+     {
+      "obf": "e",
+      "mcp": "clickedItem",
+      "type": "ItemStack"
+     }
+    ]
+   },
+   "15": {
+    "obf": "ii",
+    "mcp": "net/minecraft/network/play/client/C0FPacketConfirmTransaction",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "uid",
+      "type": "short"
+     },
+     {
+      "obf": "c",
+      "mcp": "accepted",
+      "type": "byte"
+     }
+    ]
+   },
+   "16": {
+    "obf": "iw",
+    "mcp": "net/minecraft/network/play/client/C10PacketCreativeInventoryAction",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "slotId",
+      "type": "short"
+     },
+     {
+      "obf": "b",
+      "mcp": "stack",
+      "type": "ItemStack"
+     }
+    ]
+   },
+   "17": {
+    "obf": "ij",
+    "mcp": "net/minecraft/network/play/client/C11PacketEnchantItem",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "windowId",
+      "type": "byte"
+     },
+     {
+      "obf": "b",
+      "mcp": "button",
+      "type": "byte"
+     }
+    ]
+   },
+   "18": {
+    "obf": "ix",
+    "mcp": "net/minecraft/network/play/client/C12PacketUpdateSign",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "pos",
+      "type": "BlockPos"
+     },
+     {
+      "obf": "b",
+      "mcp": "lines",
+      "type": "??(new eu[4])"
+     }
+    ]
+   },
+   "19": {
+    "obf": "iq",
+    "mcp": "net/minecraft/network/play/client/C13PacketPlayerAbilities",
+    "fields": []
+   },
+   "20": {
+    "obf": "id",
+    "mcp": "net/minecraft/network/play/client/C14PacketTabComplete",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "message",
+      "type": "String(max=Short.MAX_VALUE)"
+     },
+     {
+      "obf": "b",
+      "mcp": "targetBlock",
+      "type": "BlockPos"
+     }
+    ]
+   },
+   "21": {
+    "obf": "ih",
+    "mcp": "net/minecraft/network/play/client/C15PacketClientSettings",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "lang",
+      "type": "String(max=7)"
+     },
+     {
+      "obf": "b",
+      "mcp": "view",
+      "type": "byte"
+     },
+     {
+      "obf": "c",
+      "mcp": "chatVisibility",
+      "type": "byte"
+     },
+     {
+      "obf": "d",
+      "mcp": "enableColors",
+      "type": "boolean"
+     },
+     {
+      "obf": "e",
+      "mcp": "modelPartFlags",
+      "type": "ubyte"
+     }
+    ]
+   },
+   "22": {
+    "obf": "ig",
+    "mcp": "net/minecraft/network/play/client/C16PacketClientStatus",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "status",
+      "type": "??(em2.a(a.class))"
+     }
+    ]
+   },
+   "23": {
+    "obf": "im",
+    "mcp": "net/minecraft/network/play/client/C17PacketCustomPayload",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "channel",
+      "type": "String(max=20)"
+     },
+     {
+      "obf": "b",
+      "mcp": "data",
+      "type": "bytes(n)"
+     }
+    ]
+   },
+   "24": {
+    "obf": "iz",
+    "mcp": "net/minecraft/network/play/client/C18PacketSpectate",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "id",
+      "type": "UUID"
+     }
+    ]
+   },
+   "25": {
+    "obf": "iu",
+    "mcp": "net/minecraft/network/play/client/C19PacketResourcePackStatus",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "hash",
+      "type": "String(max=40)"
+     },
+     {
+      "obf": "b",
+      "mcp": "status",
+      "type": "??(em2.a(a.class))"
+     }
+    ]
+   }
+  }
+ },
+ "STATUS": {
+  "SERVERBOUND": {
+   "0": {
+    "obf": "jv",
+    "mcp": "net/minecraft/network/status/client/C00PacketServerQuery",
+    "fields": []
+   },
+   "1": {
+    "obf": "ju",
+    "mcp": "net/minecraft/network/status/client/C01PacketPing",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "clientTime",
+      "type": "long"
+     }
+    ]
+   }
+  },
+  "CLIENTBOUND": {
+   "0": {
+    "obf": "jr",
+    "mcp": "net/minecraft/network/status/server/S00PacketServerInfo",
+    "fields": [
+     {
+      "obf": "b",
+      "mcp": "response",
+      "type": "String(max=Short.MAX_VALUE)"
+     }
+    ]
+   },
+   "1": {
+    "obf": "jq",
+    "mcp": "net/minecraft/network/status/server/S01PacketPong",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "clientTime",
+      "type": "long"
+     }
+    ]
+   }
+  }
+ },
+ "LOGIN": {
+  "CLIENTBOUND": {
+   "0": {
+    "obf": "jj",
+    "mcp": "net/minecraft/network/login/server/S00PacketDisconnect",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "reason",
+      "type": "IChatComponent(JSON)"
+     }
+    ]
+   },
+   "1": {
+    "obf": "jh",
+    "mcp": "net/minecraft/network/login/server/S01PacketEncryptionRequest",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "hashedServerId",
+      "type": "String(max=20)"
+     },
+     {
+      "obf": "b",
+      "mcp": "publicKey",
+      "type": "byte[]"
+     },
+     {
+      "obf": "c",
+      "mcp": "verifyToken",
+      "type": "byte[]"
+     }
+    ]
+   },
+   "2": {
+    "obf": "jg",
+    "mcp": "net/minecraft/network/login/server/S02PacketLoginSuccess",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "profile",
+      "type": "??(new GameProfile(\\u26032, \\u2603))"
+     }
+    ]
+   },
+   "3": {
+    "obf": "ji",
+    "mcp": "net/minecraft/network/login/server/S03PacketEnableCompression",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "compressionTreshold",
+      "type": "VarInt"
+     }
+    ]
+   }
+  },
+  "SERVERBOUND": {
+   "0": {
+    "obf": "jl",
+    "mcp": "net/minecraft/network/login/client/C00PacketLoginStart",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "profile",
+      "type": "String(max=16)"
+     }
+    ]
+   },
+   "1": {
+    "obf": "jm",
+    "mcp": "net/minecraft/network/login/client/C01PacketEncryptionResponse",
+    "fields": [
+     {
+      "obf": "a",
+      "mcp": "secretKeyEncrypted",
+      "type": "byte[]"
+     },
+     {
+      "obf": "b",
+      "mcp": "verifyTokenEncrypted",
+      "type": "byte[]"
+     }
+    ]
+   }
+  }
+ }
+}
