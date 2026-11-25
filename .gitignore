@@ -1,0 +1,16 @@
+# reverse-engineering working artifacts (large; not part of the deliverable)
+analysis/extract/
+analysis/src/
+analysis/logs/
+analysis/tools/node_modules/
+analysis/tools/mcdata/
+analysis/tools/chunks/
+analysis/tools/shard_*
+analysis/tools/rest_*
+analysis/tools/*.tgz
+analysis/tools/*.log
+analysis/venv/
+analysis/cfr-master/
+analysis/*.tar.gz
+analysis/*.class
+__pycache__/

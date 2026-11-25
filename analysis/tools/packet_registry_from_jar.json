@@ -1,0 +1,468 @@
+{
+ "HANDSHAKING": {
+  "SERVERBOUND": {
+   "0": {
+    "obf": "jc",
+    "mcp": "net/minecraft/network/handshake/client/C00Handshake"
+   }
+  }
+ },
+ "PLAY": {
+  "CLIENTBOUND": {
+   "0": {
+    "obf": "gn",
+    "mcp": "net/minecraft/network/play/server/S00PacketKeepAlive"
+   },
+   "1": {
+    "obf": "gt",
+    "mcp": "net/minecraft/network/play/server/S01PacketJoinGame"
+   },
+   "2": {
+    "obf": "fy",
+    "mcp": "net/minecraft/network/play/server/S02PacketChat"
+   },
+   "3": {
+    "obf": "hu",
+    "mcp": "net/minecraft/network/play/server/S03PacketTimeUpdate"
+   },
+   "4": {
+    "obf": "hn",
+    "mcp": "net/minecraft/network/play/server/S04PacketEntityEquipment"
+   },
+   "5": {
+    "obf": "ht",
+    "mcp": "net/minecraft/network/play/server/S05PacketSpawnPosition"
+   },
+   "6": {
+    "obf": "hp",
+    "mcp": "net/minecraft/network/play/server/S06PacketUpdateHealth"
+   },
+   "7": {
+    "obf": "he",
+    "mcp": "net/minecraft/network/play/server/S07PacketRespawn"
+   },
+   "8": {
+    "obf": "fi",
+    "mcp": "net/minecraft/network/play/server/S08PacketPlayerPosLook"
+   },
+   "9": {
+    "obf": "hi",
+    "mcp": "net/minecraft/network/play/server/S09PacketHeldItemChange"
+   },
+   "10": {
+    "obf": "ha",
+    "mcp": "net/minecraft/network/play/server/S0APacketUseBed"
+   },
+   "11": {
+    "obf": "fq",
+    "mcp": "net/minecraft/network/play/server/S0BPacketAnimation"
+   },
+   "12": {
+    "obf": "fp",
+    "mcp": "net/minecraft/network/play/server/S0CPacketSpawnPlayer"
+   },
+   "13": {
+    "obf": "hy",
+    "mcp": "net/minecraft/network/play/server/S0DPacketCollectItem"
+   },
+   "14": {
+    "obf": "fk",
+    "mcp": "net/minecraft/network/play/server/S0EPacketSpawnObject"
+   },
+   "15": {
+    "obf": "fn",
+    "mcp": "net/minecraft/network/play/server/S0FPacketSpawnMob"
+   },
+   "16": {
+    "obf": "fo",
+    "mcp": "net/minecraft/network/play/server/S10PacketSpawnPainting"
+   },
+   "17": {
+    "obf": "fl",
+    "mcp": "net/minecraft/network/play/server/S11PacketSpawnExperienceOrb"
+   },
+   "18": {
+    "obf": "hm",
+    "mcp": "net/minecraft/network/play/server/S12PacketEntityVelocity"
+   },
+   "19": {
+    "obf": "hb",
+    "mcp": "net/minecraft/network/play/server/S13PacketDestroyEntities"
+   },
+   "20": {
+    "obf": "gv",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity"
+   },
+   "21": {
+    "obf": "gv.a",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity$S15PacketEntityRelMove"
+   },
+   "22": {
+    "obf": "gv.c",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity$S16PacketEntityLook"
+   },
+   "23": {
+    "obf": "gv.b",
+    "mcp": "net/minecraft/network/play/server/S14PacketEntity$S17PacketEntityLookMove"
+   },
+   "24": {
+    "obf": "hz",
+    "mcp": "net/minecraft/network/play/server/S18PacketEntityTeleport"
+   },
+   "25": {
+    "obf": "hf",
+    "mcp": "net/minecraft/network/play/server/S19PacketEntityHeadLook"
+   },
+   "26": {
+    "obf": "gi",
+    "mcp": "net/minecraft/network/play/server/S19PacketEntityStatus"
+   },
+   "27": {
+    "obf": "hl",
+    "mcp": "net/minecraft/network/play/server/S1BPacketEntityAttach"
+   },
+   "28": {
+    "obf": "hk",
+    "mcp": "net/minecraft/network/play/server/S1CPacketEntityMetadata"
+   },
+   "29": {
+    "obf": "ib",
+    "mcp": "net/minecraft/network/play/server/S1DPacketEntityEffect"
+   },
+   "30": {
+    "obf": "hc",
+    "mcp": "net/minecraft/network/play/server/S1EPacketRemoveEntityEffect"
+   },
+   "31": {
+    "obf": "ho",
+    "mcp": "net/minecraft/network/play/server/S1FPacketSetExperience"
+   },
+   "32": {
+    "obf": "ia",
+    "mcp": "net/minecraft/network/play/server/S20PacketEntityProperties"
+   },
+   "33": {
+    "obf": "go",
+    "mcp": "net/minecraft/network/play/server/S21PacketChunkData"
+   },
+   "34": {
+    "obf": "fz",
+    "mcp": "net/minecraft/network/play/server/S22PacketMultiBlockChange"
+   },
+   "35": {
+    "obf": "fv",
+    "mcp": "net/minecraft/network/play/server/S23PacketBlockChange"
+   },
+   "36": {
+    "obf": "fu",
+    "mcp": "net/minecraft/network/play/server/S24PacketBlockAction"
+   },
+   "37": {
+    "obf": "fs",
+    "mcp": "net/minecraft/network/play/server/S25PacketBlockBreakAnim"
+   },
+   "38": {
+    "obf": "gp",
+    "mcp": "net/minecraft/network/play/server/S26PacketMapChunkBulk"
+   },
+   "39": {
+    "obf": "gk",
+    "mcp": "net/minecraft/network/play/server/S27PacketExplosion"
+   },
+   "40": {
+    "obf": "gq",
+    "mcp": "net/minecraft/network/play/server/S28PacketEffect"
+   },
+   "41": {
+    "obf": "gs",
+    "mcp": "net/minecraft/network/play/server/S29PacketSoundEffect"
+   },
+   "42": {
+    "obf": "gr",
+    "mcp": "net/minecraft/network/play/server/S2APacketParticles"
+   },
+   "43": {
+    "obf": "gm",
+    "mcp": "net/minecraft/network/play/server/S2BPacketChangeGameState"
+   },
+   "44": {
+    "obf": "fm",
+    "mcp": "net/minecraft/network/play/server/S2CPacketSpawnGlobalEntity"
+   },
+   "45": {
+    "obf": "gc",
+    "mcp": "net/minecraft/network/play/server/S2DPacketOpenWindow"
+   },
+   "46": {
+    "obf": "gb",
+    "mcp": "net/minecraft/network/play/server/S2EPacketCloseWindow"
+   },
+   "47": {
+    "obf": "gf",
+    "mcp": "net/minecraft/network/play/server/S2FPacketSetSlot"
+   },
+   "48": {
+    "obf": "gd",
+    "mcp": "net/minecraft/network/play/server/S30PacketWindowItems"
+   },
+   "49": {
+    "obf": "ge",
+    "mcp": "net/minecraft/network/play/server/S31PacketWindowProperty"
+   },
+   "50": {
+    "obf": "ga",
+    "mcp": "net/minecraft/network/play/server/S32PacketConfirmTransaction"
+   },
+   "51": {
+    "obf": "hw",
+    "mcp": "net/minecraft/network/play/server/S33PacketUpdateSign"
+   },
+   "52": {
+    "obf": "gu",
+    "mcp": "net/minecraft/network/play/server/S34PacketMaps"
+   },
+   "53": {
+    "obf": "ft",
+    "mcp": "net/minecraft/network/play/server/S35PacketUpdateTileEntity"
+   },
+   "54": {
+    "obf": "gw",
+    "mcp": "net/minecraft/network/play/server/S36PacketSignEditorOpen"
+   },
+   "55": {
+    "obf": "fr",
+    "mcp": "net/minecraft/network/play/server/S37PacketStatistics"
+   },
+   "56": {
+    "obf": "gz",
+    "mcp": "net/minecraft/network/play/server/S38PacketPlayerListItem"
+   },
+   "57": {
+    "obf": "gx",
+    "mcp": "net/minecraft/network/play/server/S39PacketPlayerAbilities"
+   },
+   "58": {
+    "obf": "fx",
+    "mcp": "net/minecraft/network/play/server/S3APacketTabComplete"
+   },
+   "59": {
+    "obf": "hq",
+    "mcp": "net/minecraft/network/play/server/S3BPacketScoreboardObjective"
+   },
+   "60": {
+    "obf": "hs",
+    "mcp": "net/minecraft/network/play/server/S3CPacketUpdateScore"
+   },
+   "61": {
+    "obf": "hj",
+    "mcp": "net/minecraft/network/play/server/S3DPacketDisplayScoreboard"
+   },
+   "62": {
+    "obf": "hr",
+    "mcp": "net/minecraft/network/play/server/S3EPacketTeams"
+   },
+   "63": {
+    "obf": "gg",
+    "mcp": "net/minecraft/network/play/server/S3FPacketCustomPayload"
+   },
+   "64": {
+    "obf": "gh",
+    "mcp": "net/minecraft/network/play/server/S40PacketDisconnect"
+   },
+   "65": {
+    "obf": "fw",
+    "mcp": "net/minecraft/network/play/server/S41PacketServerDifficulty"
+   },
+   "66": {
+    "obf": "gy",
+    "mcp": "net/minecraft/network/play/server/S42PacketCombatEvent"
+   },
+   "67": {
+    "obf": "hh",
+    "mcp": "net/minecraft/network/play/server/S43PacketCamera"
+   },
+   "68": {
+    "obf": "hg",
+    "mcp": "net/minecraft/network/play/server/S44PacketWorldBorder"
+   },
+   "69": {
+    "obf": "hv",
+    "mcp": "net/minecraft/network/play/server/S45PacketTitle"
+   },
+   "70": {
+    "obf": "gl",
+    "mcp": "net/minecraft/network/play/server/S46PacketSetCompressionLevel"
+   },
+   "71": {
+    "obf": "hx",
+    "mcp": "net/minecraft/network/play/server/S47PacketPlayerListHeaderFooter"
+   },
+   "72": {
+    "obf": "hd",
+    "mcp": "net/minecraft/network/play/server/S48PacketResourcePackSend"
+   },
+   "73": {
+    "obf": "gj",
+    "mcp": "net/minecraft/network/play/server/S49PacketUpdateEntityNBT"
+   }
+  },
+  "SERVERBOUND": {
+   "0": {
+    "obf": "io",
+    "mcp": "net/minecraft/network/play/client/C00PacketKeepAlive"
+   },
+   "1": {
+    "obf": "ie",
+    "mcp": "net/minecraft/network/play/client/C01PacketChatMessage"
+   },
+   "2": {
+    "obf": "in",
+    "mcp": "net/minecraft/network/play/client/C02PacketUseEntity"
+   },
+   "3": {
+    "obf": "ip",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer"
+   },
+   "4": {
+    "obf": "ip.a",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer$C04PacketPlayerPosition"
+   },
+   "5": {
+    "obf": "ip.c",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer$C05PacketPlayerLook"
+   },
+   "6": {
+    "obf": "ip.b",
+    "mcp": "net/minecraft/network/play/client/C03PacketPlayer$C06PacketPlayerPosLook"
+   },
+   "7": {
+    "obf": "ir",
+    "mcp": "net/minecraft/network/play/client/C07PacketPlayerDigging"
+   },
+   "8": {
+    "obf": "ja",
+    "mcp": "net/minecraft/network/play/client/C08PacketPlayerBlockPlacement"
+   },
+   "9": {
+    "obf": "iv",
+    "mcp": "net/minecraft/network/play/client/C09PacketHeldItemChange"
+   },
+   "10": {
+    "obf": "iy",
+    "mcp": "net/minecraft/network/play/client/C0APacketAnimation"
+   },
+   "11": {
+    "obf": "is",
+    "mcp": "net/minecraft/network/play/client/C0BPacketEntityAction"
+   },
+   "12": {
+    "obf": "it",
+    "mcp": "net/minecraft/network/play/client/C0CPacketInput"
+   },
+   "13": {
+    "obf": "il",
+    "mcp": "net/minecraft/network/play/client/C0DPacketCloseWindow"
+   },
+   "14": {
+    "obf": "ik",
+    "mcp": "net/minecraft/network/play/client/C0EPacketClickWindow"
+   },
+   "15": {
+    "obf": "ii",
+    "mcp": "net/minecraft/network/play/client/C0FPacketConfirmTransaction"
+   },
+   "16": {
+    "obf": "iw",
+    "mcp": "net/minecraft/network/play/client/C10PacketCreativeInventoryAction"
+   },
+   "17": {
+    "obf": "ij",
+    "mcp": "net/minecraft/network/play/client/C11PacketEnchantItem"
+   },
+   "18": {
+    "obf": "ix",
+    "mcp": "net/minecraft/network/play/client/C12PacketUpdateSign"
+   },
+   "19": {
+    "obf": "iq",
+    "mcp": "net/minecraft/network/play/client/C13PacketPlayerAbilities"
+   },
+   "20": {
+    "obf": "id",
+    "mcp": "net/minecraft/network/play/client/C14PacketTabComplete"
+   },
+   "21": {
+    "obf": "ih",
+    "mcp": "net/minecraft/network/play/client/C15PacketClientSettings"
+   },
+   "22": {
+    "obf": "ig",
+    "mcp": "net/minecraft/network/play/client/C16PacketClientStatus"
+   },
+   "23": {
+    "obf": "im",
+    "mcp": "net/minecraft/network/play/client/C17PacketCustomPayload"
+   },
+   "24": {
+    "obf": "iz",
+    "mcp": "net/minecraft/network/play/client/C18PacketSpectate"
+   },
+   "25": {
+    "obf": "iu",
+    "mcp": "net/minecraft/network/play/client/C19PacketResourcePackStatus"
+   }
+  }
+ },
+ "STATUS": {
+  "SERVERBOUND": {
+   "0": {
+    "obf": "jv",
+    "mcp": "net/minecraft/network/status/client/C00PacketServerQuery"
+   },
+   "1": {
+    "obf": "ju",
+    "mcp": "net/minecraft/network/status/client/C01PacketPing"
+   }
+  },
+  "CLIENTBOUND": {
+   "0": {
+    "obf": "jr",
+    "mcp": "net/minecraft/network/status/server/S00PacketServerInfo"
+   },
+   "1": {
+    "obf": "jq",
+    "mcp": "net/minecraft/network/status/server/S01PacketPong"
+   }
+  }
+ },
+ "LOGIN": {
+  "CLIENTBOUND": {
+   "0": {
+    "obf": "jj",
+    "mcp": "net/minecraft/network/login/server/S00PacketDisconnect"
+   },
+   "1": {
+    "obf": "jh",
+    "mcp": "net/minecraft/network/login/server/S01PacketEncryptionRequest"
+   },
+   "2": {
+    "obf": "jg",
+    "mcp": "net/minecraft/network/login/server/S02PacketLoginSuccess"
+   },
+   "3": {
+    "obf": "ji",
+    "mcp": "net/minecraft/network/login/server/S03PacketEnableCompression"
+   }
+  },
+  "SERVERBOUND": {
+   "0": {
+    "obf": "jl",
+    "mcp": "net/minecraft/network/login/client/C00PacketLoginStart"
+   },
+   "1": {
+    "obf": "jm",
+    "mcp": "net/minecraft/network/login/client/C01PacketEncryptionResponse"
+   }
+  }
+ }
+}
