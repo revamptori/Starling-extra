@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  java.lang.Object
+ */
+public class auv
+extends aus {
+    private final mw j;
+
+    public auv(mw mw2) {
+        super(mw2.e);
+        this.j = mw2;
+    }
+}

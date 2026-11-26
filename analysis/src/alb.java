@@ -1,0 +1,20 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  java.lang.Object
+ *  java.lang.Override
+ */
+public class alb
+extends akw
+implements km {
+    @Override
+    public void c() {
+        if (this.b != null && !this.b.D && this.b.K() % 20L == 0L) {
+            this.e = this.w();
+            if (this.e instanceof aga) {
+                ((aga)this.e).f(this.b, this.c);
+            }
+        }
+    }
+}

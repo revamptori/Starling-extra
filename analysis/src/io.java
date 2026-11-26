@@ -1,0 +1,40 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  java.io.IOException
+ *  java.lang.Object
+ *  java.lang.Override
+ */
+import java.io.IOException;
+
+public class io
+implements ff<ic> {
+    private int a;
+
+    public io() {
+    }
+
+    public io(int n) {
+        this.a = n;
+    }
+
+    @Override
+    public void a(ic ic2) {
+        ic2.a(this);
+    }
+
+    @Override
+    public void a(em em2) throws IOException {
+        this.a = em2.e();
+    }
+
+    @Override
+    public void b(em em2) throws IOException {
+        em2.b(this.a);
+    }
+
+    public int a() {
+        return this.a;
+    }
+}

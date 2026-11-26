@@ -1,6 +1,6 @@
-# reverse-engineering working artifacts (large; not part of the deliverable)
+# reverse-engineering working artifacts (large; regenerable from original/client.jar.zip)
+# analysis/src/ (complete decompiled Java) IS tracked — repo is private; user requested it.
 analysis/extract/
-analysis/src/
 analysis/logs/
 analysis/tools/node_modules/
 analysis/tools/mcdata/
