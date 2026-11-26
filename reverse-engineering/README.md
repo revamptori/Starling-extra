@@ -54,8 +54,9 @@ implementation has not been started** (per scope).
 - [x] **UNRESOLVED_QUESTIONS.md** — open items A1–A9 + closed-question log (25 entries).
 
 Supporting evidence (not deliverables): `analysis/` — extraction, complete
-decompilation (`src/`, 2,507 Java files, CFR 0.152 — versioned in this private repo
-per maintainer request), mapping tables (`mappings.json`, MCP-919 conf), packet
+decompilation (2,507 Java files, CFR 0.152 — versioned in this private repo per
+maintainer request, split across `src/`, `src2/`, `src3/` for GitHub's 1,000-entry
+directory display limit), mapping tables (`mappings.json`, MCP-919 conf), packet
 registry/field extraction (`tools/`), generated tables.
 
 ## Evidence conventions
