@@ -21,12 +21,17 @@ The jar is the 1.8.9 stable mapping set (verified 100 % MCP coverage:
 | `analysis/class_index.json` | per-class names, members, flags | `tools/class_index.py` |
 | `analysis/class_catalog.json` | 2,507 rows: obf, mcp, super, interfaces | python join (this session) |
 | `analysis/mappings.json` | cls 2541 / fld 8917 / mth 16426 obf→srg→mcp | `tools/build_mappings.py` |
-| `analysis/src/*.java` | complete decompilation (CFR 0.152, 2,507 files) | `tools/run_chunks.sh` |
+| `analysis/src{,2,3}/*.java` | complete decompilation (CFR 0.152, 2,507 files; split 825/825/824 across `src`/`src2`/`src3` — GitHub's web UI truncates directories over 1,000 entries) | `tools/run_chunks.sh` |
 | `reverse-engineering/CLASS_CATALOG.md` | human-readable catalog (grouped tables) | generator |
 
 ## 3. Working with the source
 
-- Method/field names inside `analysis/src/*.java` are **obfuscated** (e.g. `pk.d(ddd)`).
+- The decompiled Java is split across **`analysis/src/`** (root files a…~c plus the
+  un-obfuscated `net/minecraft/**` tree), **`analysis/src2/`**, and **`analysis/src3/`**
+  in alphabetical order — purely for GitHub directory-size limits. To locate a class:
+  `find analysis/src analysis/src2 analysis/src3 -name 'pk.java'`, or search across all
+  three with `grep -rn ... analysis/src*`.
+- Method/field names inside these files are **obfuscated** (e.g. `pk.d(ddd)`).
   Resolve to MCP via `mappings.json`:
   `{"pk.d(DDD)V": {"srg": "func_70091_d", "mcp": "moveEntity", ...}}`.
 - Quick member listing with MCP names:
